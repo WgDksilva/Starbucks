@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-texto{
+    width: 600px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: -120px;
+}
+
+h2 {
+
+    color: #333;
+    font-size: 50px;
+    font-weight: 500;
+   
+}
+
+span {
+    color: #017143;
+    font-size: 60px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: #fff; /* cor da borda */
+}
+
+p {
+    font-size: 16px;
+
+}
+
+button {
+    background: #017143;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.starbucks{
+    width: 340px;
+}
+
+.botao-menu {
+    width: 60px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.botao-menu:hover{
+    transform: translateY(-25px);
+}
+
+.circulo {
+    position: absolute;
+    top: 80;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background: #017143 ;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+/* Responsividade para dispositivos de 800px */
+@media (max-width: 800px) {
+    body {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .caixa-texto, .caixa-imagem {
+        width: 500px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    span {
+        font-size: 50px;
+    }
+}
+
+/* Responsividade para dispositivos de 700px */
+@media (max-width: 700px) {
+    body {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .caixa-texto, .caixa-imagem {
+        width: 400px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    span {
+        font-size: 45px;
+    }
+}
+
+/* Responsividade para dispositivos de 600px */
+@media (max-width: 600px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixa-texto, .caixa-imagem {
+        width: 350px;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    span {
+        font-size: 40px;
+    }
+}
+
+/* Responsividade para dispositivos de 500px */
+@media (max-width: 500px) {
+    .caixa-texto, .caixa-imagem {
+        width: 300px;
+    }
+    .logo {
+        width: 60px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    span {
+        font-size: 35px;
+    }
+}
+
+/* Responsividade para dispositivos de 400px */
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    .caixa-texto, .caixa-imagem {
+        width: 250px;
+    }
+    .starbucks {
+        width: 280px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    span {
+        font-size: 30px;
+    }
+}
+
+/* Responsividade para dispositivos de 390px e menores */
+@media (max-width: 390px) {
+    .caixa-texto, .caixa-imagem {
+        width: 220px;
+    }
+    .botao-menu {
+        width: 50px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    span {
+        font-size: 28px;
+    }
+}
+
+/* Responsividade para dispositivos de 370px */
+@media (max-width: 370px) {
+    .caixa-texto, .caixa-imagem {
+        width: 200px;
+    }
+    .logo {
+        width: 50px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    span {
+        font-size: 26px;
+    }
+}
+
+/* Responsividade para dispositivos de 360px e menores */
+@media (max-width: 360px) {
+    .starbucks {
+        width: 260px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    span {
+        font-size: 25px;
+    }
+}
+
+/* Responsividade para dispositivos de 350px */
+@media (max-width: 350px) {
+    .caixa-texto, .caixa-imagem {
+        width: 180px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    span {
+        font-size: 23px;
+    }
+}
+
+/* Responsividade para dispositivos de 200px */
+@media (max-width: 200px) {
+    .caixa-texto, .caixa-imagem {
+        width: 150px;
+    }
+    .starbucks {
+        width: 200px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    span {
+        font-size: 20px;
+    }
+}
